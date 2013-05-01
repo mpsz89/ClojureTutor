@@ -1,6 +1,5 @@
 (ns factorial)
-(defn fact [n]
-  (loop [n n acc 1]
-    (if (= n 0)
-      acc
-      (recur (dec n) (* n acc)))))
+(defn fact [x]
+  (if (= x 0)
+    1
+    (* x (fact (- x 1)))))
