@@ -74,4 +74,4 @@
            false
         (if (and (= p 0) (= q 0))
             true 
-             "logical value error"))))))
+             "logical value error")))))
