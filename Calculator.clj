@@ -3,7 +3,7 @@
   (println (+ a b)))
 
 (defn adj [a b]
-  (println (adj (- a b))))
+  (println (- a b)))
 
 (defn mult [a b]
   (println (* a b)))
