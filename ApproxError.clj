@@ -1,5 +1,5 @@
 (ns ApproxError)
-(defn abs [a]
+((defn abs [a]
   (if (< a 0)
     (- a)
     a))
@@ -9,10 +9,10 @@
 
 (defn relerr [x o]
   (if (not= x 0)
-    (abs (/ (abs (- x o)) o))
+    (float (abs (/ (abserr x o) o)))
     0))
 
 (defn pererr [x o]
   (if (not= x 0)
-    (abs (* (/ (abs (- x o)) o) 100))
-    0))
+    (* (abs (/ (abserr x o) x)) 100)
+    0)))
