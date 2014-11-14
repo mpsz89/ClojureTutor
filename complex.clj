@@ -29,7 +29,7 @@
 
 (defn div_complex
   [a1 a2 b1 b2]
-  (complex (/ ((* a1 a2) (* b1 b2)) ((* a2 a2) (* b2 b2))  )  (/ ((* a1 b2) (* a2 b1)) ((* a2 a2) (* b2 b2))  ) ))
+  (complex (/ (- (* a1 a2) (* b1 b2)) (+ (* a2 a2) (* b2 b2))  )  (/ (+ (* a1 b2) (* a2 b1)) (+ (* a2 a2) (* b2 b2))  ) ))
 
 (defn modulus
   [x y]
