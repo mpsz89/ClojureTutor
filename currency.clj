@@ -1,3 +1,8 @@
+;Michał Piotr Szmigiel
+;Clojure 1.6.0
+;16 listopada 2014 r.
+;Kursy walut w Clojure
+
 (ns currency)
 
 (defn pln_to_euro [pln]
