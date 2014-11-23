@@ -1,7 +1,7 @@
 ;Michał Piotr Szmigiel
 ;Clojure 1.6.0
 ;16 listopada 2014 r.
-;Liczby Fibonacci w Clojure
+;Liczby Fibonacciego w Clojure
 
 ;Funkcja ciągu Fibonacciego
 (defn fib
